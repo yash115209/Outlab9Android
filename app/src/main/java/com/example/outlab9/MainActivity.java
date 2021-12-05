@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Register all the FABs with their IDs
         // This FAB button is the Parent
-        mAddFab = findViewById(R.id.add_fab);
+//        mAddFab = findViewById(R.id.add_fab);
         // FAB button
         mAddAssFab = findViewById(R.id.add_ass_fab);
         mAddExamFab = findViewById(R.id.add_exam_fab);
@@ -82,10 +82,11 @@ public class MainActivity extends AppCompatActivity {
         isAllFabsVisible = false;
 
         setSupportActionBar(binding.appBarMain.toolbar);
+//        binding.appBarMain.addFloatbtn.bringToFront();
         Log.d("MainActivity.java", "onClick: HI");
         //assert binding.appBarMain.addFab!= null;
-        assert mAddFab!= null;
-        mAddFab.bringToFront();
+//        assert mAddFab!= null;
+//        mAddFab.bringToFront();
 //        mAddFab.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
@@ -210,7 +211,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void onClickFAB(View view) {
+   /* public void onClickFAB(View view) {
         Log.d("MainActivity.java", "onClick: HI");
         if (!isAllFabsVisible) {
             Log.d("MainActivity.java", "onClick: HI");
@@ -249,6 +250,6 @@ public class MainActivity extends AppCompatActivity {
             // visibility to GONE
             isAllFabsVisible = false;
         }
-    }
+    }*/
 
 }
